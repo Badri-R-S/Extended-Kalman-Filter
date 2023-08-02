@@ -1,0 +1,11 @@
+<launch>
+  <!-- Include the first launch file using a package-relative path -->
+  <include file="$(find ucb_slam)/launch/turtlebot3_world.launch" />
+
+
+  <!-- Launch multiple Python nodes -->
+  <node name="turtlebot3_circle" pkg="ucb_slam" type="turtlebot3_circle.py" />
+  <node name="noisy_odom" pkg="ucb_slam" type="noisy_odom_pub.py" />
+  <node name="ekf" pkg="ucb_slam" type="ekf.py" />
+  <!-- Add more nodes as needed -->    
+</launch>
