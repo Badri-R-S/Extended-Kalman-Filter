@@ -39,7 +39,7 @@ https://drive.google.com/file/d/1xxwmwqsUD_AgQlHpRAJh0bsUTzVtMaSd/view?usp=drive
 2. Set up a ROS workspace. http://wiki.ros.org/catkin/Tutorials/create_a_workspace
 3. Git clone this repository into the workspace.
 4. Run **catkin_make** from the workspace directory in the terminal.
-5. Run the command **roslaunch ucb_slam ekf.launch** to launch the file that launches all the necessary nodes.
+5. Run the command **roslaunch package_name ekf.launch** to launch the file that launches all the necessary nodes. Replace **package_name** with your package name
 6. Use rqt_plot to visualize the unfiltered and filtered data. 
 
 
